@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    width: 350px;
+    height: 250px;
+    margin: 20px;
+}
+
+.box:hover {
+    cursor: pointer;
+}
+
+.box img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.box h4 {
+    /* display: none; */
+
+    opacity: 0;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.box:hover h4 {
+    /* display: block; */
+    opacity: 1;
+    transition: ease 3s;
+    transform: translateY(-10px);
+    background-color: rgb(64, 37, 239);
+    color: aqua;
+}
